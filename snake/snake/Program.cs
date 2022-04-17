@@ -1,3 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine(value: "Hello, World2!");
+﻿
+void Draw(int x, int y, char symb)
+{
+    Console.SetCursorPosition(x, y);
+    Console.Write(symb);
+    Console.WriteLine();
+}
+
+Draw(5, 5, '*');
+Draw(3, 4, '#');
+Draw(1, 2, '#');
 Console.ReadLine();
