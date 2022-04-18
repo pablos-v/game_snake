@@ -1,12 +1,10 @@
-﻿
-void Draw(int x, int y, char symb)
-{
-    Console.SetCursorPosition(x, y);
-    Console.Write(symb);
-    Console.WriteLine();
-}
+﻿snake.Point p1 = new snake.Point();
+p1.x = 2;
+p1.y = 2;
+p1.Draw();
 
-Draw(5, 5, '*');
-Draw(3, 4, '#');
-Draw(1, 2, '#');
+snake.Point p2 = new snake.Point();
+p2.y = 4;
+p2.Draw();
+
 Console.ReadLine();
