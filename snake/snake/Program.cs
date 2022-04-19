@@ -8,4 +8,8 @@ lineUp.Draw();
 lineLeft.Draw();
 lineRight.Draw();
 
+snake.Point p1 = new snake.Point(3, 3, '+');
+snake.Snake my_snake = new snake.Snake(p1, 10, snake.Direction.RIGHT);
+my_snake.Draw();
+
 Console.ReadLine();
