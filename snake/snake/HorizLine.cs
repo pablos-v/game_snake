@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace snake
 {
-    internal class HorizLine
+    internal class HorizLine : Figure
     {
-        List<Point> pL;
         public HorizLine(int xL, int xR, int y, char symb)
         {
             pL = new List<Point>();
@@ -18,13 +17,6 @@ namespace snake
                 pL.Add(p);
             }
             
-        }
-        public void Draw()
-        {
-            foreach(Point i in pL)
-            {
-                i.Draw();
-            }
         }
     }
 }
