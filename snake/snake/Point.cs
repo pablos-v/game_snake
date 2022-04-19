@@ -8,9 +8,9 @@ namespace snake
 {
     internal class Point
     {
-        public int x = 1;
-        public int y = 1;
-        public char symb = '*';
+        public int x;
+        public int y;
+        public char symb;
 
         public Point() //Конструктор 1
         {
@@ -55,6 +55,10 @@ namespace snake
             Console.Write(symb);
         }
 
-
+        public void Clear()
+        {
+            symb = ' ';
+            Draw();
+        }
     }
 }
