@@ -12,7 +12,7 @@ namespace snake
         public int y = 1;
         public char symb = '*';
 
-        public Point(int _x, int _y, char _symb)
+        public Point(int _x, int _y, char _symb) //Конструктор
         {
             x = _x;
             y = _y;
@@ -24,6 +24,7 @@ namespace snake
             Console.SetCursorPosition(x, y);
             Console.Write(symb);
         }
+
 
     }
 }
