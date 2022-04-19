@@ -25,4 +25,9 @@ List<snake.Point> lP = new List<snake.Point>();
 lP.Add(p1);
 lP[0].Draw();
 
+snake.HorizLine line = new snake.HorizLine(1,10,2,'#');
+line.Draw();
+snake.VertLine col = new snake.VertLine(10, 2, 11, '#');
+col.Draw();
+
 Console.ReadLine();
