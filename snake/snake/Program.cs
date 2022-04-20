@@ -17,12 +17,9 @@ while(true)
     if(Console.KeyAvailable)
     {
         ConsoleKeyInfo key = Console.ReadKey();
-        if (key.Key == ConsoleKey.LeftArrow) my_snake.direction = snake.Direction.LEFT;
-        else if (key.Key == ConsoleKey.RightArrow) my_snake.direction = snake.Direction.RIGHT;
-        else if (key.Key == ConsoleKey.UpArrow) my_snake.direction = snake.Direction.UP;
-        else if (key.Key == ConsoleKey.DownArrow) my_snake.direction = snake.Direction.DOWN;
+        my_snake.DirectionListener(key.Key);
     }
-    Thread.Sleep(300);
+    Thread.Sleep(150);
     my_snake.Move();
 }
 //Console.ReadLine();
