@@ -45,5 +45,16 @@ namespace snake
             else if (key == ConsoleKey.UpArrow) direction = Direction.UP;
             else if (key == ConsoleKey.DownArrow) direction = Direction.DOWN;
         }
+        internal bool Eat(Point apple)
+        {
+            Point head = GetNextPoint();
+            if (head.IsHit(apple))
+            {
+                apple.symb = head.symb;
+                pL.Add(apple);
+                return true;
+            }
+            else return false;
+        }
     }
 }
